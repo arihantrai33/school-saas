@@ -9,19 +9,21 @@
 <div class="sidebar">
     <h2>School SaaS</h2>
     <a href="#">Dashboard</a>
+    <a href="#">Profile</a>
     <a href="#">Students</a>
     <a href="#">Attendance</a>
     <a href="#">Fees</a>
-    <a href="/">Logout</a>
+    <a href="/logout">Logout</a>
 </div>
 
 <div class="main">
-    <h1>Welcome to Dashboard</h1>
+    <h1>Welcome, {{ name }} 👋</h1>
 
     <div class="cards">
-        <div class="card">Students</div>
-        <div class="card">Attendance</div>
-        <div class="card">Fees</div>
+        <div class="card">Students<br><span>120</span></div>
+        <div class="card">Classes<br><span>8</span></div>
+        <div class="card">Attendance<br><span>92%</span></div>
+        <div class="card">Fees Pending<br><span>₹45,000</span></div>
     </div>
 </div>
 

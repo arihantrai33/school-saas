@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: url("saas.jpg") no-repeat center center / cover;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(2px);
+}
+
+.welcome-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    padding: 35px 45px;
+    text-align: center;
+
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(14px);
+    border-radius: 18px;
+
+    color: white;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+
+    animation: fadeIn 0.6s ease;
+}
+
+.welcome-card h2 {
+    margin: 0 0 10px;
+    font-size: 26px;
+}
+
+.welcome-card p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -55%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
